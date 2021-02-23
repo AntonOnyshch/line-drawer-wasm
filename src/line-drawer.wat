@@ -51,13 +51,13 @@
                     (i64.shl (i64.const 255) (i64.const 24))
                     (i32.const 0)
                 )
+ 
+                (global.set $prev_x0 (local.get $x0))
+                (global.set $prev_y0 (local.get $y0))
+                (global.set $prev_x1 (local.get $x1))
+                (global.set $prev_y1 (local.get $y1))
             )
         )
-
-        (global.set $prev_x0 (local.get $x0))
-        (global.set $prev_y0 (local.get $y0))
-        (global.set $prev_x1 (local.get $x1))
-        (global.set $prev_y1 (local.get $y1))
 
         (local.set $stride (global.get $stride))
 
