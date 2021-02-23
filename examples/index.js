@@ -31,7 +31,6 @@ window.startWebAssembly = function() {
   window.ldExport.init(window.cvsImageData.width, window.cvsImageData.height, window.cvsImageData.width * 4);
   const data = new Uint8ClampedArray(window.memory.buffer, 0, window.cvsImageData.width * window.cvsImageData.height * 4);
   window.cvsImageData = new ImageData(data, window.cvsImageData.width, window.cvsImageData.height);
-  window.cvsContext.createImageData(window.cvsImageData);
   window.ldExport.fill(BigInt(255 << 24));
   window.inited = true;
 }
