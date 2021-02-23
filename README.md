@@ -7,3 +7,5 @@ This is the WebAssembly representation of Bresenham's line algorithm
 2. Execute this line in terminal: **node ./start-node-server.js** to start Node server
 3. Put it in the browser line: **http://localhost:3003/examples/index.html**
 4. Press "Go" button to initialize
+
+![debug](examples/debug.jpg)
